@@ -54,6 +54,12 @@ wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent
    systemctl restart sniproxy
    systemctl restart dnsmasq
    ```
+- 确认是否正确 `nslookup foxplus.com`
+   ```
+   Name:   foxplus.com
+   Address: vpsip
+
+   ```
 
 ### 调试排错：
 - 确认sniproxy有效运行
