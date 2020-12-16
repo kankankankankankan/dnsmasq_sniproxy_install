@@ -50,8 +50,10 @@ wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent
 - 编辑/etc/dnsmasq.d/custom_netflix.conf 增加address=/foxplus.com/vpsip
 - 编辑/etc/sniproxy.conf table { }增加.*foxplus\.com$ *
 - 重启
-`systemctl restart sniproxy`
-`systemctl restart dnsmasq`
+   ```
+   systemctl restart sniproxy
+   systemctl restart dnsmasq
+   ```
 
 ### 调试排错：
 - 确认sniproxy有效运行
