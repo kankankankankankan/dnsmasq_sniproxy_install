@@ -47,7 +47,7 @@ wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent
 防止滥用，建议不要随意公布IP地址，或使用防火墙做好限制工作。
 
 ### 新增域名
-- 编辑/etc/dnsmasq.d/custom_netflix.conf 增加address=/foxplus.com/vpsip
+- 编辑/etc/dnsmasq.d/custom_netflix.conf 增加address=/foxplus.com/vps-ip
 - 编辑/etc/sniproxy.conf table { }增加.*foxplus\.com$ *
 - 重启
    ```
@@ -57,7 +57,7 @@ wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent
 - 确认是否正确 `nslookup foxplus.com`
    ```
    Name:   foxplus.com
-   Address: vpsip
+   Address: vps-ip
 
    ```
 
