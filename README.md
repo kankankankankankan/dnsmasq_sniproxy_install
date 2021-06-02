@@ -55,7 +55,8 @@ wget --no-check-certificate -O dnsmasq_sniproxy.sh https://raw.githubusercontent
    systemctl restart sniproxy
    systemctl restart dnsmasq
    ```
-- 确认是否成功 `nslookup foxplus.com` 若执行失败 CENTOS安装：`yum install -y bind-utils` DEBIAN安装：`apt-get -y install dnsutils`
+- 确认是否成功 `nslookup foxplus.com` 
+- 若执行失败 CENTOS安装：`yum install -y bind-utils` DEBIAN安装：`apt-get -y install dnsutils`
    ```
    Name:   foxplus.com
    Address: vps-ip
